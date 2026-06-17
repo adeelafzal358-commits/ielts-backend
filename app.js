@@ -15,6 +15,8 @@ app.use(express.json());
 const authRoutes = require("./routes/auth.routes");
 const userRoutes = require("./routes/user.routes");
 const candidateRoutes = require("./routes/candidate.routes");
+const testRoutes = require("./routes/test.routes");
+const resultRoutes = require("./routes/result.routes");
 const authMiddleware = require("./src/middleware/auth.middleware");
 const adminMiddleware = require("./src/middleware/admin.middleware");
 
@@ -24,6 +26,8 @@ const adminMiddleware = require("./src/middleware/admin.middleware");
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/candidates", candidateRoutes);
+app.use("/api/tests", testRoutes);
+app.use("/api/results", resultRoutes);
 
 // =====================
 // TEST ROUTE
