@@ -1,28 +1,20 @@
 {
-  "name": "backend",
+  "name": "ielts-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "bcrypt": "^6.0.0",
+    "@supabase/supabase-js": "^2.106.2",
     "bcryptjs": "^3.0.3",
-    "body-parser": "^2.2.2",
-    "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
+    "dotenv": "^16.4.5",
     "express": "^5.2.1",
+    "json2csv": "^6.0.0-alpha.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.6.3",
+    "mongoose": "^9.7.0",
     "nodemailer": "^8.0.10",
-    "pdfkit": "^0.18.0",
-    "recharts": "^3.8.1"
+    "pdfkit": "^0.18.0"
   }
 }
