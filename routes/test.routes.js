@@ -11,7 +11,7 @@ const adminMiddleware = require("../src/middleware/admin.middleware");
 router.post("/", authMiddleware, adminMiddleware, testController.createTest);
 router.get("/", authMiddleware, testController.getAllTests);
 router.get("/:id", authMiddleware, testController.getTestById);
-router.put("/:id", authMiddleware, adminMiddleware, testController.updateTest);
+router.put("/:id/questions/:questionId", authMiddleware, adminMiddleware, testController.updateQuestion);
 router.delete("/:id", authMiddleware, adminMiddleware, testController.deleteTest);
 
 // =====================
